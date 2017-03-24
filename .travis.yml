@@ -4,7 +4,6 @@ php:
 
 before_script:
   - composer install
-  - php artisan config:cache
   - "sh start-server.sh > /dev/null &"
   - "phantomjs --webdriver=4444 > /dev/null &"
 
