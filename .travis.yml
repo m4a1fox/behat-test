@@ -3,9 +3,14 @@ php:
   - '7.0'
 
 before_script:
-  - composer install
+  - mv .env.behat.travis .env.behat
+  - chmod -R 777 storage
+  - touch storage/acceptance.sqlite
+  - composer self-update
+  - composer install --prefer-source
+  - php artisan key:generate
   - "sh start-server.sh > /dev/null &"
   - "phantomjs --webdriver=4444 > /dev/null &"
 
 script:
-  - vendor/bin/behat
+  - vendor/bin/behat --config behat.yml
