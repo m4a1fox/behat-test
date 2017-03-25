@@ -1,6 +1,16 @@
 default:
+  autoload:
+    '': %paths.base%/features/bootstrap
   extensions:
-    Laracasts\Behat\ServiceContainer\BehatExtension: ~
-    Behat\MinkExtension\ServiceContainer\MinkExtension:
-      default_session: laravel
-      laravel: ~
+    Behat\MinkExtension:
+      base_url:  'http://127.0.0.1:8000'
+      sessions:
+        default:
+          goutte: ~
+        javascript:
+          selenium2:
+            browser: phantomjs
+  suites:
+    default:
+      paths:
+        - %paths.base%/features
