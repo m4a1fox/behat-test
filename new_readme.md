@@ -1,7 +1,13 @@
-## 1. Version release per month ##
+# PK License iFrame #
 
-## 2. Core features only (and must not be overlapping), 1-2 integration features (and must not be overlapping), plus other ui updates ##
+### How to configure ###
 
-## 3. Weeks of dev. 1 week of QA / fixes. ##
+1. Download the source from this repository
+2. Edit the index.php file, and add the following information
+2.1 Replace YourAPIKey with your Paykickstart API key, located in your Platform Settings
+2.2 Change the campaign id to your actual campaign id that you want to display license keys for
 
-## 4. Weekly VOICE meeting with EVERYONE, including Mark / Matt. Update on what's done, what problems we've encountered and how to solve them etc. Also noting any problems causing delays. ##
+### How to use ###
+You can now create an iframe in whichever file you're using the license manager on with the source pointing to the index.php file, and include an email parameter which is your customer's actual email address. For example
+
+`<iframe width="100%" height="400px” src=”index.php?email=<insert-yourcustomers-email-address-here” />`
