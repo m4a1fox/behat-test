@@ -3,7 +3,7 @@
 ### How to configure ###
 
 1. Download the source from this repository
-2. Edit the index.php file, and add the following information
+2. Edit the index.php file, and add the following information.
     *Replace YourAPIKey with your Paykickstart API key, located in your Platform Settings* 
     *Change the campaign id to your actual campaign id that you want to display license keys for*
 
