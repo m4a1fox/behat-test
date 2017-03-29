@@ -10,4 +10,4 @@
 ### How to use ###
 You can now create an iframe in whichever file you're using the license manager on with the source pointing to the index.php file, and include an email parameter which is your customer's actual email address. For example
 
-`<iframe width="100%" height="400px” src=”index.php?email=<insert-yourcustomers-email-address-here” />`
+`<iframe width="100%" height="400px” src=”index.php?email=<insert-yourcustomers-email-address-here>” />`
